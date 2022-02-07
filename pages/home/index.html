@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../global.css">
+    <title>First Page</title>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>FLEXBOX</h1>
+            </div>
+
+            <div class="navbar">
+                <ul>
+                    <li>
+                        <a href="">COLOR</a>
+                    </li>
+                    <li>
+                        <a href="">BOX-MODEL</a>
+                    </li>
+                    <li>
+                        <a href="">PROPRIEDADES</a>
+                    </li>
+                    <li>
+                        <a href="">ANIMATIONS</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="navbar-search">
+                <input 
+                type="search" 
+                name="search"
+                placeholder="SEARCH"
+                >
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="colors">
+            <div class="colors-about">
+                <h1>Cores em css</h1>
+
+                <p>As palavras-chave de cor são identificadores não sensíveis a maiúsculas e minúsculas que representam uma cor específica, ex.: red, blue, brown, ou lightseagreen.</p>
+
+                <div class="colors-callout">
+                    <div class="callout callout-one">
+                        CSS nível 1 aceita apenas16 cores básicas, denominadas cores VGA já que foram tiradas do conjunto de cores exibíveis das placas gráficas VGA.
+                    </div>
+
+                    <div class="callout callout-two">
+                        CSS nível 2 Adicionou a palavra-chave orange.
+                    </div>
+                </div>
+            </div>
+
+            <div class="colors-img">
+                <img src="../../assets/color.png" alt="palheta de cores">
+            </div>
+        </div>
+
+        <div class="box-model">
+            <h1>Box model</h1>
+
+            <div class="box-about">
+                <div class="box box-padding">
+                    <h3>padding</h3>
+
+                    <ul>
+                        <li>Item dentro da box</li>
+                        <li>Espaçamento interno</li>
+                    </ul>
+                </div>
+
+                <div class="box box-border">
+                    <h3>border</h3>
+
+                    <ul>
+                        <li>Cor da borda</li>
+                        <li>Gorussa da borda</li>
+                        <li>Arredondamento da borda</li>
+                    </ul>
+                </div>
+
+                <div class="box box-margin">
+                    <h3>margin</h3>
+
+                    <ul>
+                        <li>Separa elementos</li>
+                        <li>Espaçamento exertno</li>
+                    </ul>
+                </div>
+
+                <div class="box box-width-heigth">
+                    <h3>width & heigth</h3>
+
+                    <ul>
+                        <li>Altura da box</li>
+                        <li>Tamanho da box</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <article>
+        <div class="propriedades">
+            <div class="about">
+                <div class="box-propriedade unidades">
+                    <h1>Unidades</h1>
+
+                    <div class="paragraph">
+                        <h3>px</h3>
+                        <p>É a unidade mais utilizada nas paginas web.</p>
+    
+                        <h3>rem</h3>
+                        <p>É considerada uma medida relativa. O rem é o sucessor do em mas sua implementação é diferente</p>
+    
+                        <h3>em</h3>
+                        <p>Unidade relativa ao tamanho da fonte do elemento pai.</p>
+    
+                        <h3>vh & vw</h3>
+                        <p>O vh (viewport height) representa o tamanho da altura da tela visível e o vw (viewport width).</p>
+    
+                        <h3>calc</h3>
+                        <p>É uma função do CSS que retorna um valor com base no cálculo efetuado. Pode combinar unidades.</p>
+                    </div>
+                </div>
+    
+                <div class="box-propriedade tipografia">
+                    <h1>Tipografia</h1>
+
+                    <div class="paragraph">
+                        <h3>family</h3>
+                        <p>De qual família a letra é derivada</p>
+    
+                        <h3>size</h3>
+                        <p>Tamanho da fonte</p>
+                        
+                        <h3>weight</h3>
+                        <p>Grossura da letra</p>
+    
+                        <h3>height</h3>
+                        <p>Altura</p>
+    
+                        <h3>aling</h3>
+                        <p>Alinhamento</p>
+    
+                        <h3>shadow</h3>
+                        <p>Sombreamento</p>
+    
+                        <h3>spacing</h3>
+                        <p>Espaçamento</p>
+                    </div>
+                </div>
+    
+                <div class="box-propriedade background">
+                    <h1>Background</h1>
+
+                    <div class="paragraph">
+                        <h3>color</h3>
+                        <p>Cor da box</p>
+    
+                        <h3>image</h3>
+                        <p>URL ou diretorio que a img está 
+                            armazenada</p>
+    
+                        <h3>repeat</h3>
+                        <p>Repetir ou não a imagem</p>
+    
+                        <h3>size</h3>
+                        <p>Tamanho da imagem na box</p>
+    
+                        <h3>position</h3>
+                        <p>Posição da imagem na box</p>
+    
+                        <h3>linear-gradient</h3>
+                        <p>Degrade em linha reta</p>
+    
+                        <h3>radial-gradient</h3>
+                        <p>Degrade em circuferencia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="animations">
+            <a href="../animations/index.html">TRANSFORMS & ANIMATIONS</a>
+        </div>
+    </article>
+
+    <footer>
+        <div class="inform">
+            <h1>@Todos os direitos autorais reservados</h1>
+        </div>
+    </footer>
+    
+
+</body>
+</html>
