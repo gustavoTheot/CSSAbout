@@ -10,6 +10,7 @@ main{
     max-width: 1000px;
     height: 540px;
     margin: 0 auto;
+    
     border-bottom: 1px solid #bebebe8c;
 
     display: flex;
@@ -39,9 +40,10 @@ main{
     margin-top: 40px;
 }
 
-.colors-about .colors-callout .callout{
+.colors-about .callouts .callout{
     width: 600px;
     height: 100px;
+
     padding: 30px;
     margin: 10px 0 0 0;
 
@@ -58,7 +60,9 @@ main{
 .box-model{
     max-width: 1000px;
     height: 700px;
+
     margin: 0 auto;
+
     border-bottom: 1px solid #bebebe8c;
 
     display: flex;
@@ -80,7 +84,6 @@ main{
     width: 250px;
     height: 340px;
     margin: 0 10px 0 10px;
-    
 
     background-color: #F3F3F3;
 
@@ -92,7 +95,9 @@ main{
 .box-padding::before{
     content: '';
     display: inline-block;
+
     background-color: #B434D4;
+
     width: 220px;
     height: 10px;
 }
@@ -100,7 +105,9 @@ main{
 .box-border::before{
     content: '';
     display: inline-block;
+
     background-color: #F01D82;
+
     width: 220px;
     height: 10px;
 }
@@ -108,7 +115,9 @@ main{
 .box-margin::before{
     content: '';
     display: inline-block;
+
     background-color: #34A4D4;
+
     width: 220px;
     height: 10px;
 }
@@ -116,7 +125,9 @@ main{
 .box-width-heigth::before{
     content: '';
     display: inline-block;
+
     background-color: #FBC813;
+
     width: 220px;
     height: 10px;
 }
@@ -132,20 +143,18 @@ main{
     font-size: 14px;
 }
 
-/* responsividade box-model */
-
 
 /* article */
 article{
     color: #FFFFFF;
 }
 
-.propriedades{
+.property{
     margin-top: 40px;
     background-color: #2C2C2C;
 }
 
-.about{
+.property-about{
     max-width: 1000px;
     margin: 0 auto;
     height: 750px;
@@ -155,41 +164,51 @@ article{
     align-items: center;
 }
 
-.about h1{
+.property-about h1{
     font-weight: normal;
 }
 
-.box-propriedade{
+.box-property{
     width: 400px;
     height: 400px;
 
     margin-bottom: 80px;
 }
 
-.unidades h1::before{
+.units h1::before{
     content: '';
+
     display: inline-block;
+
     background-color: #27DE4F;
+
     height: 20px;
     width: 5px;
+
     margin-right: 10px;
 }
 
 .tipografia h1::before{
     content: '';
     display: inline-block;
+
     background-color: #288CB7;
+
     height: 20px;
     width: 5px;
+
     margin-right: 10px;
 }
 
 .background h1::before{
     content: '';
+
     display: inline-block;
     background-color: #DE3227;
+
     height: 20px;
     width: 5px;
+
     margin-right: 10px;
 }
 
@@ -212,6 +231,7 @@ article{
     height: 300px;
 
     margin: 0 auto;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -232,6 +252,53 @@ article{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* responsivadade */
+@media (max-width: 1000px) {
+
+    /* main box-model*/
+    .box-model{
+        height: 900px;
+
+        align-items: center;
+    }
+
+    .box-about{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+
+    /* property */
+    .property-about{
+        height: 1600px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tipografia, .background{
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    /* main box-model*/
+    .box-model{
+        height: 1000px;
+
+        align-items: center;
+    }
+
+    .box-about{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
 }
 
 

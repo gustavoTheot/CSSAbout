@@ -28,6 +28,7 @@ header nav{
 
 .logo h1{
     color: #313131;
+    cursor: default;
 }
 
 .navbar ul{
@@ -40,6 +41,9 @@ header nav{
 
 .navbar ul li{
     list-style: none;
+
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.2s;
 }
 
 .navbar ul li a{
@@ -47,6 +51,26 @@ header nav{
     font-size: 14px;
     color: #313131 ;
     padding: 10px;
+}
+
+.navbar ul li:hover{
+    transform: scale(1.1);
+}
+
+.navbar ul .item-one a:hover{
+    color: #9C56FD
+}
+
+.navbar ul .item-two a:hover{
+    color: #E66A81 
+}
+
+.navbar ul .item-three a:hover{
+    color: #FB794D
+}
+
+.navbar ul .item-four a:hover{
+    color: #F7A044
 }
 
 .navbar-search input{
@@ -68,8 +92,6 @@ header nav{
 footer{
     background: linear-gradient(90deg, #9C56FD 0%, #E66A81 13.78%, #FB794D 25.83%, #F7A044 37.96%, #DEC64A 50.41%, #9FF165 61.91%, #59DEAB 71.32%, #43CACC 80.5%, #42BEE7 87.37%, #50A3F7 96.54%);
     mix-blend-mode: normal;
-
-    
 }
 
 .inform{

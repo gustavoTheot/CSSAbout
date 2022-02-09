@@ -7,6 +7,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
+
 }
 
 .monalisa-scale, .box-loading, .box-questioning, .box-moviment-colors{
