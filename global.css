@@ -31,6 +31,10 @@ header nav{
     cursor: default;
 }
 
+.hamburguer{
+    display: none;
+}
+
 .navbar ul{
     width: 540px;
 
